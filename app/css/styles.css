@@ -190,7 +190,13 @@ h4 {
   border-radius: 5px;
   line-height: 47px;
   text-align: center;
-  font-family: 'Arial', sains; }
+  font-family: 'Arial', sains;
+  opacity: 0.8;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+  .button:hover {
+    opacity: 1; }
   .button1 {
     background-color: #7e7cb0;
     margin-bottom: 20px; }
@@ -307,7 +313,8 @@ h4 {
   .form__button {
     display: block;
     margin: 0 auto;
-    color: #fff; }
+    color: #fff;
+    line-height: initial; }
   .form__text {
     margin: 10px 5%; }
   .form__img {
@@ -394,7 +401,9 @@ h4 {
     position: relative;
     margin-bottom: -120px; }
   .action__text {
-    margin-top: 230px; } }
+    margin-top: 230px; }
+  .toHome {
+    margin-top: 150px; } }
 
 @media screen and (min-width: 1024px) {
   h1 {
@@ -467,4 +476,5 @@ h4 {
   .contacts__title {
     padding-top: 15px; }
   .contacts__text {
-    margin: 0 15px; } }
+    margin: 0 15px;
+    text-align: center; } }
