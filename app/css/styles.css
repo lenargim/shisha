@@ -1,0 +1,470 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+html {
+  line-height: 1.15;
+  overflow-x: hidden; }
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  font-family: "Merriweather", serif;
+  background-color: #000;
+  cursor: default; }
+
+a:hover {
+  text-decoration: none;
+  color: #bebbcc; }
+
+section {
+  overflow: hidden; }
+
+h1 {
+  color: #4236a6;
+  letter-spacing: -2px;
+  font-size: 33px;
+  font-weight: 500;
+  line-height: 50px;
+  text-transform: uppercase; }
+
+h2 {
+  color: #6c6ba1;
+  font-size: 26px;
+  line-height: 40px; }
+
+h3 {
+  color: #4139a2;
+  font-size: 30px;
+  line-height: 40px; }
+
+h4 {
+  color: #7e7cb0;
+  font-size: 26px; }
+
+.col {
+  -webkit-flex-basis: auto;
+      -ms-flex-preferred-size: auto;
+          flex-basis: auto; }
+
+.transition {
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+.container {
+  position: relative;
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto; }
+
+.menu {
+  height: 80px; }
+
+.menu__open {
+  margin: 20px auto 20px;
+  height: 180px; }
+
+.nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  left: 0;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .nav__link {
+    text-transform: uppercase;
+    color: #bebbcc;
+    text-decoration: none;
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center; }
+
+.hide {
+  top: -100vh;
+  opacity: 0; }
+
+.show {
+  opacity: 1; }
+
+.tire {
+  display: none; }
+
+.burger {
+  position: absolute;
+  right: 25px;
+  top: 50px;
+  height: 16px;
+  width: 25px;
+  cursor: pointer;
+  z-index: 2; }
+  .burger span {
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: #7e7cb0;
+    border-radius: 5px;
+    -webkit-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out; }
+    .burger span.pos1:nth-child(1) {
+      top: 0px; }
+    .burger span.pos1:nth-child(2) {
+      top: 10px; }
+    .burger span.pos2:nth-child(1) {
+      top: 5px;
+      -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+              transform: rotate(45deg); }
+    .burger span.pos2:nth-child(2) {
+      top: 5px;
+      -webkit-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+              transform: rotate(-45deg); }
+
+.background__img {
+  position: absolute;
+  top: 140px;
+  left: -560px;
+  right: -500px;
+  z-index: -1;
+  opacity: 0.92;
+  width: 1388px; }
+  .background__img img {
+    width: 100%; }
+
+.shisha {
+  width: 313px;
+  padding-left: 100px;
+  height: 325px;
+  margin: 0 auto; }
+  .shisha img {
+    width: 100%; }
+
+.title {
+  width: 345px;
+  margin: 0 auto 30px; }
+  .title__phone {
+    margin-top: 30px; }
+    .title__phone a {
+      font-size: 28px;
+      font-weight: 400;
+      line-height: 40.35px;
+      color: #4139a2; }
+  .title h2 {
+    color: #4139a2; }
+
+.buttons {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+.button {
+  max-width: 172px;
+  width: 100%;
+  height: 47px;
+  white-space: nowrap;
+  font-size: 16px;
+  font-weight: 100;
+  border-radius: 5px;
+  line-height: 47px;
+  text-align: center;
+  font-family: 'Arial', sains; }
+  .button1 {
+    background-color: #7e7cb0;
+    margin-bottom: 20px; }
+  .button2 {
+    background-color: #4139a2; }
+  .button__link a {
+    color: #fff; }
+
+.section2 {
+  position: relative; }
+
+.hashtag {
+  margin: 0 auto 20px;
+  text-align: center; }
+  .hashtag span {
+    font-size: 36px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #7e7cb0; }
+
+.ifame {
+  border: none;
+  margin: 0 -15px; }
+
+.borders {
+  position: absolute;
+  width: 346px;
+  height: 189px;
+  right: 0;
+  top: 250px;
+  background: url("../img/smoke2_m.png") no-repeat; }
+
+.action h2 {
+  text-transform: uppercase; }
+
+.action__text {
+  width: 100%;
+  text-align: center;
+  margin-top: 160px; }
+  .action__text p {
+    color: #bebbcc;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -1px; }
+
+.action__img {
+  max-width: 484px;
+  margin: 0 auto; }
+  .action__img img {
+    width: 100%; }
+
+.prices__title, .toHome__title, .contacts__title {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px; }
+  .prices__title span, .toHome__title span, .contacts__title span {
+    color: #bebbcc;
+    font-size: 24px; }
+
+.prices__text, .toHome__text, .contacts__text {
+  color: #bebbcc;
+  font-size: 20px; }
+  .prices__text p, .toHome__text p, .contacts__text p {
+    margin: 0;
+    position: relative; }
+
+.prices__img, .toHome__img, .contacts__img {
+  max-width: 848px;
+  margin: 0 auto; }
+  .prices__img img, .toHome__img img, .contacts__img img {
+    width: 100%; }
+
+.prices__shisha .prices__text, .prices__tea .prices__text, .prices__drinks .prices__text {
+  max-width: 316px;
+  margin: 0 auto; }
+  .prices__shisha .prices__text p, .prices__tea .prices__text p, .prices__drinks .prices__text p {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .prices__shisha .prices__text .price, .prices__tea .prices__text .price, .prices__drinks .prices__text .price {
+    display: inline-block;
+    width: 50px; }
+
+.prices__tobacco {
+  max-width: 590px;
+  margin: 0 auto; }
+
+.toHome__block {
+  max-width: 405px;
+  margin: 0 auto; }
+
+.form {
+  position: relative;
+  z-index: 2;
+  max-width: 350px;
+  height: 390px;
+  background: rgba(211, 208, 208, 0.8);
+  border-radius: 5px;
+  border: 2px solid #7e7cb0;
+  padding: 20px 0;
+  margin: 80px auto 100px; }
+  .form__title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px; }
+  .form__button {
+    display: block;
+    margin: 0 auto;
+    color: #fff; }
+  .form__text {
+    margin: 10px 5%; }
+  .form__img {
+    position: absolute;
+    z-index: 1;
+    width: 500px;
+    right: 0;
+    top: 0; }
+    .form__img img {
+      width: 100%; }
+
+.input {
+  width: 90%;
+  padding: 10px;
+  background: #fff;
+  margin: 20px 5%; }
+
+.contacts {
+  background-color: #000;
+  width: 345px;
+  height: 325px;
+  margin: 0 auto; }
+  .contacts__title {
+    margin-top: 0; }
+
+.footer {
+  height: 30px;
+  background-color: #000; }
+
+@media screen and (min-width: 375px) {
+  .button1 {
+    margin-right: 20px; } }
+
+@media screen and (min-width: 658px) {
+  .shisha {
+    margin-bottom: 30px; }
+  .background__img {
+    top: -165px;
+    left: -610px; } }
+
+@media screen and (min-width: 768px) {
+  .background__img {
+    top: -100px;
+    left: 0; }
+  .header .row {
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+  .nav {
+    width: 635px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    margin: 40px 15px;
+    right: 0;
+      right-top: 93px; }
+    .nav__link {
+      margin: 0; }
+  .burger {
+    display: none; }
+  .title {
+    text-align: center;
+    margin: 40px auto 30px; }
+  .hashtag {
+    position: relative;
+    top: -100px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin: 0 auto 40px; }
+  .iframe {
+    top: 74px;
+    position: relative;
+    margin-bottom: -120px; }
+  .action__text {
+    margin-top: 230px; } }
+
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 39px; }
+  .background__img {
+    top: 80px; }
+  .action__text {
+    margin-top: 100px; }
+  .shisha {
+    width: 418px;
+    height: 635px;
+    margin: 0; }
+  .tire {
+    display: inline; }
+  .br {
+    display: none; }
+  .title {
+    width: 600px;
+    margin: 180px auto 0; }
+    .title__phone {
+      margin-top: 0; }
+  .borders {
+    position: absolute;
+    width: 900px;
+    height: 601px;
+    right: -140px;
+    top: 0;
+    background: url("../img/smoke2.png") no-repeat; }
+  .section1 .row {
+    padding-top: 100px; }
+  .action {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: row-reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    margin-top: 300px; }
+  .prices {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .prices__title {
+      height: 84px; }
+    .prices__shisha {
+      position: unset; }
+    .prices__img {
+      position: absolute;
+      left: 50%;
+      margin-left: -424px;
+      top: 700px;
+      z-index: -1; }
+    .prices__drinks {
+      margin-top: 240px; }
+    .prices__tobacco .prices__title {
+      height: auto;
+      text-align: left; }
+    .prices__tobacco .prices__text {
+      font-size: 18px; }
+  .toHome__title {
+    height: auto;
+    text-align: left; }
+  .toHome__text {
+    font-size: 18px; }
+  .section3 {
+    position: absolute;
+    z-index: 1;
+    bottom: 20px;
+    right: 0; }
+  .contacts__title {
+    padding-top: 15px; }
+  .contacts__text {
+    margin: 0 15px; } }

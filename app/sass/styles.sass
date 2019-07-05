@@ -1,0 +1,385 @@
+$mainColor: #7e7cb0
+$colorH1: #4236a6
+$colorH2: #6c6ba1
+$colorH3: #4139a2
+$backgroundColor: #000
+$colorGrey: #bebbcc
+$mainFont: 'Merriweather', serif
+*,
+*::before,
+*::after 
+  box-sizing: border-box
+html
+	line-height: 1.15
+	overflow-x: hidden
+body
+	position: relative
+	overflow-x: hidden
+	font-family: $mainFont
+	background-color: $backgroundColor
+	cursor: default
+a:hover
+	text-decoration: none
+	color: $colorGrey
+section
+	overflow: hidden
+h1
+	color: $colorH1
+	letter-spacing: -2px
+	font-size: 33px
+	font-weight: 500
+	line-height: 50px
+	text-transform: uppercase
+h2
+	color: $colorH2
+	font-size: 26px 
+	line-height: 40px
+h3
+	color: $colorH3
+	font-size: 30px 
+	line-height: 40px
+h4
+	color: $mainColor
+	font-size: 26px
+.col
+	flex-basis: auto
+.transition
+	transition: all 0.3s ease
+.container
+	position: relative
+	max-width: 1170px
+	width: 100%
+	margin: 0 auto
+.menu
+	height: 80px
+.menu__open
+	margin: 20px auto 20px
+	height: 180px
+.nav
+	display: flex
+	left: 0 
+	width: 100%
+	flex-direction: column
+	justify-content: center
+	&__link,
+		text-transform: uppercase
+		color: #bebbcc
+		text-decoration: none
+		font-size: 18px
+		margin-bottom: 20px
+		text-align: center
+.hide
+	top: -100vh
+	opacity: 0
+.show
+	opacity: 1
+.tire
+	display: none
+.burger
+	position: absolute
+	right: 25px
+	top: 50px
+	height: 16px
+	width: 25px
+	cursor: pointer
+	z-index: 2
+	& span
+		position: absolute
+		width: 100%
+		height: 5px
+		background-color: $mainColor
+		border-radius: 5px
+		transition: all 0.25s ease-in-out
+		&.pos1
+			&:nth-child(1)
+				top: 0px
+			&:nth-child(2)
+				top: 10px
+		&.pos2
+			&:nth-child(1)
+				top: 5px
+				transform: rotate(45deg)
+			&:nth-child(2)
+				top: 5px
+				transform: rotate(-45deg)
+.background__img
+	position: absolute
+	top: 140px
+	left: -560px
+	right: -500px
+	z-index: -1
+	opacity: 0.92
+	width: 1388px
+	& img
+		width: 100%
+.shisha
+	width: 313px
+	padding-left: 100px
+	height: 325px
+	margin: 0 auto
+	& img
+		width: 100%
+.title
+	width: 345px
+	margin: 0 auto 30px
+	&__phone
+		margin-top: 30px
+		& a
+			font-size: 28px
+			font-weight: 400
+			line-height: 40.35px
+			color: $colorH3
+	& h2
+		color: #4139a2
+.buttons
+	width: 100%
+	display: flex
+	justify-content: center
+	margin-top: 20px
+	flex-wrap: wrap
+.button
+	max-width: 172px
+	width: 100%
+	height: 47px
+	white-space: nowrap
+	font-size: 16px
+	font-weight: 100
+	border-radius: 5px
+	line-height: 47px
+	text-align: center
+	font-family: 'Arial', sains
+	&1
+		background-color: $mainColor
+		margin-bottom: 20px	
+	&2
+		background-color: $colorH3
+	&__link a
+		color: #fff
+.section2
+	position: relative	
+.hashtag
+	margin: 0 auto 20px
+	text-align: center
+	& span
+		font-size: 36px
+		font-weight: 500
+		text-transform: uppercase
+		color: $mainColor
+.ifame
+	border: none
+	margin: 0 -15px
+.borders
+	position: absolute
+	width: 346px
+	height: 189px
+	right: 0
+	top: 250px
+	background: url('../img/smoke2_m.png') no-repeat
+.action
+	& h2
+		text-transform: uppercase
+	&__text
+		width: 100%
+		text-align: center
+		margin-top: 160px
+		& p
+			color: $colorGrey
+			font-size: 20px
+			font-weight: 400
+			line-height: 22px
+			letter-spacing: -1px
+	&__img
+		max-width: 484px
+		margin: 0 auto
+		& img
+			width: 100%
+.prices, .toHome, .contacts
+	&__title
+		width: 100%
+		text-align: center
+		margin-top: 50px
+		margin-bottom: 30px
+		& span
+			color: $colorGrey
+			font-size: 24px	
+	&__text
+		color: $colorGrey
+		font-size: 20px
+		& p
+			margin: 0
+			position: relative
+	&__img
+		max-width: 848px
+		margin: 0 auto
+		& img
+			width: 100%
+.prices__shisha, .prices__tea, .prices__drinks
+	& .prices__text
+		max-width: 316px
+		margin: 0 auto
+		& p
+			width: 100%
+			display: flex
+			justify-content: space-between
+		& .price
+			display: inline-block
+			width: 50px
+.prices__tobacco
+	max-width: 590px
+	margin: 0 auto
+.toHome__block
+	max-width: 405px
+	margin: 0 auto
+.form
+	position: relative
+	z-index: 2
+	max-width: 350px
+	height: 390px
+	background: rgba(211, 208, 208, 0.8)
+	border-radius: 5px
+	border: 2px solid $mainColor
+	padding: 20px 0
+	margin: 80px auto 100px
+	&__title
+		width: 100%
+		text-align: center
+		margin-bottom: 20px
+	&__button
+		display: block
+		margin: 0 auto
+		color: #fff
+	&__text
+		margin: 10px 5%
+	&__img
+		position: absolute
+		z-index: 1
+		width: 500px
+		right: 0
+		top: 0
+		& img
+			width: 100%
+.input
+	width: 90%
+	padding: 10px
+	background: #fff
+	margin: 20px 5%
+.contacts
+	background-color: #000
+	width: 345px
+	height: 325px
+	margin: 0 auto
+	&__title
+		margin-top: 0
+.footer
+	height: 30px
+	background-color: #000
+@media screen and (min-width:375px)
+	.button1
+		margin-right: 20px
+@media screen and (min-width:658px)
+	.shisha
+		margin-bottom: 30px
+	.background__img
+		top: -165px
+		left: -610px
+@media screen and (min-width:768px)
+	.background__img
+		top: -100px
+		left: 0
+	.header .row
+		justify-content: flex-end
+	.nav
+		width: 635px
+		flex-direction: row
+		justify-content: space-around
+		margin: 40px 15px
+		right: 0
+    top: 93px
+		&__link
+			margin: 0
+	.burger
+		display: none
+	.title
+		text-align: center
+		margin: 40px auto 30px
+	.hashtag
+		position: relative
+		top: -100px
+		display: flex
+		justify-content: flex-end
+		margin: 0 auto 40px
+	.iframe
+		top: 74px
+		position: relative
+		margin-bottom: -120px
+	.action__text
+		margin-top: 230px
+@media screen and (min-width:1024px)
+	h1
+		font-size: 39px
+	.background__img
+		top: 80px
+	.action__text
+		margin-top: 100px
+	.shisha
+		width: 418px
+		height: 635px
+		margin: 0
+	.tire
+		display: inline
+	.br
+		display: none
+	.title
+		width: 600px
+		margin: 180px auto 0
+		&__phone
+			margin-top: 0
+	.borders
+		position: absolute
+		width: 900px
+		height: 601px
+		right: -140px
+		top: 0
+		background: url('../img/smoke2.png') no-repeat
+	.section1 .row
+		padding-top: 100px
+	.action
+		flex-direction: row-reverse
+		margin-top: 300px
+	.prices
+		justify-content: center
+		&__title
+			height: 84px
+		&__shisha
+			position: unset
+		&__img
+			position: absolute
+			left: 50%
+			margin-left: -424px
+			top: 700px
+			z-index: -1
+		&__drinks
+			margin-top: 240px
+		&__tobacco
+			.prices__title
+				height: auto
+				text-align: left
+			.prices__text
+				font-size: 18px
+	.toHome
+		&__title
+			height: auto
+			text-align: left
+		&__text
+			font-size: 18px
+	.section3
+		position: absolute
+		z-index: 1
+		bottom: 20px
+		right: 0
+	.contacts
+		&__title
+			padding-top: 15px
+		&__text
+			margin: 0 15px
+
